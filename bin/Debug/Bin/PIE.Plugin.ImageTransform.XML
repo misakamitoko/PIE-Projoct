@@ -1,0 +1,975 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PIE.Plugin.ImageTransform</name>
+    </assembly>
+    <members>
+        <member name="T:PIE.Plugin.FrmDeRelationStretch">
+            <summary>
+            去相关拉伸
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.FrmDeRelationStretch.ExChangeData">
+            <summary>
+            参数转换
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmDeRelationStretch.#ctor">
+            <summary>
+            去相关拉伸
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmDeRelationStretch.GetFiles(System.String)">
+            <summary>
+            获取文件路径
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmDeRelationStretch.provingText(DevExpress.XtraEditors.TextEdit,System.String)">
+            <summary>
+            判断textbox是否为空
+            </summary>
+            <param name="textBox"></param>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="F:PIE.Plugin.FrmDeRelationStretch.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmDeRelationStretch.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmDeRelationStretch.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.TransformDeRelationStretchCommand">
+            <summary>
+            去相关拉伸Command
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.TransformDeRelationStretchCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.TransformDeRelationStretchCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.TransformDeRelationStretchCommand.OnAlgoExecuteCompleted(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法执行完成事件
+            </summary>
+            <param name="algo">算法</param>
+        </member>
+        <member name="M:PIE.Plugin.TransformDeRelationStretchCommand.OnAlgoProgressChanged(System.Double,System.String,PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法进度变化事件
+            </summary>
+            <param name="complete">进度</param>
+            <param name="msg">进度信息</param>
+            <param name="algo">算法</param>
+            <returns>int</returns>
+        </member>
+        <member name="T:PIE.Plugin.FrmFFTInv">
+            <summary>
+            傅里叶逆变换
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.FrmFFTInv.ExChangeData">
+            <summary>
+            参数转换
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmFFTInv.#ctor">
+             <summary>
+            傅里叶逆变换
+             </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmFFTInv.GetFiles(System.String)">
+            <summary>
+            获取文件路径
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmFFTInv.provingText(DevExpress.XtraEditors.TextEdit,System.String)">
+            <summary>
+            判断textbox是否为空
+            </summary>
+            <param name="textBox"></param>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="F:PIE.Plugin.FrmFFTInv.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmFFTInv.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmFFTInv.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.TransformFuncCommand_FFTInv">
+            <summary>
+            傅里叶逆变换Command
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.TransformFuncCommand_FFTInv.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.TransformFuncCommand_FFTInv.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.TransformFuncCommand_FFTInv.OnAlgoExecuteCompleted(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法执行完成事件
+            </summary>
+            <param name="algo">算法</param>
+        </member>
+        <member name="M:PIE.Plugin.TransformFuncCommand_FFTInv.OnAlgoProgressChanged(System.Double,System.String,PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法进度变化事件
+            </summary>
+            <param name="complete">进度</param>
+            <param name="msg">进度信息</param>
+            <param name="algo">算法</param>
+            <returns>int</returns>
+        </member>
+        <member name="T:PIE.Plugin.FrmKT">
+            <summary>
+            缨帽变换
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.FrmKT.ExChangeData">
+            <summary>
+            参数转换
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmKT.#ctor">
+            <summary>
+            缨帽变换
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmKT.GetFiles(System.String)">
+            <summary>
+            获取文件路径
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmKT.provingText(DevExpress.XtraEditors.TextEdit,System.String)">
+            <summary>
+            判断textbox是否为空
+            </summary>
+            <param name="textBox"></param>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="F:PIE.Plugin.FrmKT.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmKT.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmKT.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.TransformFuncCommand_KT">
+            <summary>
+            缨帽变换Command
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.TransformFuncCommand_KT.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.TransformFuncCommand_KT.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.TransformFuncCommand_KT.OnAlgoExecuteCompleted(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法执行完成事件
+            </summary>
+            <param name="algo">算法</param>
+        </member>
+        <member name="M:PIE.Plugin.TransformFuncCommand_KT.OnAlgoProgressChanged(System.Double,System.String,PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法进度变化事件
+            </summary>
+            <param name="complete">进度</param>
+            <param name="msg">进度信息</param>
+            <param name="algo">算法</param>
+            <returns>int</returns>
+        </member>
+        <member name="T:PIE.Plugin.FrmFFT">
+            <summary>
+            傅里叶正变换
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.FrmFFT.ExChangeData">
+            <summary>
+            参数转换
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmFFT.#ctor">
+            <summary>
+            傅里叶正变换
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmFFT.GetFiles(System.String)">
+            <summary>
+            获取文件路径
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmFFT.provingText(DevExpress.XtraEditors.TextEdit,System.String)">
+            <summary>
+            判断textbox是否为空
+            </summary>
+            <param name="textBox"></param>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmFFT.simpleButton_Cancle_Click(System.Object,System.EventArgs)">
+            <summary>
+            取消
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmFFT.listBoxControl1_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            波段选择变化事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:PIE.Plugin.FrmFFT.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmFFT.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmFFT.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.TransformFuncCommand_FFT">
+            <summary>
+            傅里叶正变换Command
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.TransformFuncCommand_FFT.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.TransformFuncCommand_FFT.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.TransformFuncCommand_FFT.OnAlgoExecuteCompleted(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法执行完成事件
+            </summary>
+            <param name="algo">算法</param>
+        </member>
+        <member name="M:PIE.Plugin.TransformFuncCommand_FFT.OnAlgoProgressChanged(System.Double,System.String,PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法进度变化事件
+            </summary>
+            <param name="complete">进度</param>
+            <param name="msg">进度信息</param>
+            <param name="algo">算法</param>
+            <returns>int</returns>
+        </member>
+        <member name="T:PIE.Plugin.FrmMNFInv">
+            <summary>
+            最小噪声逆变换
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.FrmMNFInv.ExChangeData">
+            <summary>
+            参数转换
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmMNFInv.#ctor">
+            <summary>
+            最小噪声逆变换
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmMNFInv.GetFiles(System.String)">
+            <summary>
+            获取文件路径
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmMNFInv.provingText(DevExpress.XtraEditors.TextEdit,System.String)">
+            <summary>
+            判断textbox是否为空
+            </summary>
+            <param name="textBox"></param>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="F:PIE.Plugin.FrmMNFInv.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmMNFInv.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmMNFInv.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.TransformFuncCommand_MNFInv">
+            <summary>
+            最小噪声逆变换Command
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.TransformFuncCommand_MNFInv.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.TransformFuncCommand_MNFInv.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.TransformFuncCommand_MNFInv.OnAlgoExecuteCompleted(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法执行完成事件
+            </summary>
+            <param name="algo">算法</param>
+        </member>
+        <member name="M:PIE.Plugin.TransformFuncCommand_MNFInv.OnAlgoProgressChanged(System.Double,System.String,PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法进度变化事件
+            </summary>
+            <param name="complete">进度</param>
+            <param name="msg">进度信息</param>
+            <param name="algo">算法</param>
+            <returns>int</returns>
+        </member>
+        <member name="T:PIE.Plugin.FrmMNF">
+            <summary>
+            最小噪声正变换
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.FrmMNF.ExChangeData">
+            <summary>
+            参数转换
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmMNF.#ctor">
+            <summary>
+            最小噪声正变换
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmMNF.GetFiles(System.String)">
+            <summary>
+            获取文件路径
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmMNF.provingText(DevExpress.XtraEditors.TextEdit,System.String)">
+            <summary>
+            判断textbox是否为空
+            </summary>
+            <param name="textBox"></param>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="F:PIE.Plugin.FrmMNF.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmMNF.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmMNF.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.TransformFuncCommand_MNF">
+            <summary>
+            最小噪声正变换Command
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.TransformFuncCommand_MNF.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.TransformFuncCommand_MNF.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.TransformFuncCommand_MNF.OnAlgoExecuteCompleted(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法执行完成事件
+            </summary>
+            <param name="algo">算法</param>
+        </member>
+        <member name="M:PIE.Plugin.TransformFuncCommand_MNF.OnAlgoProgressChanged(System.Double,System.String,PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法进度变化事件
+            </summary>
+            <param name="complete">进度</param>
+            <param name="msg">进度信息</param>
+            <param name="algo">算法</param>
+            <returns>int</returns>
+        </member>
+        <member name="T:PIE.Plugin.FrmPCAInv">
+            <summary>
+            主成分逆变换
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.FrmPCAInv.ExChangeData">
+            <summary>
+            参数转换
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmPCAInv.#ctor">
+            <summary>
+            主成分逆变换
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmPCAInv.GetFiles(System.String)">
+            <summary>
+            获取文件路径
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmPCAInv.provingText(DevExpress.XtraEditors.TextEdit,System.String)">
+            <summary>
+            判断textbox是否为空
+            </summary>
+            <param name="textBox"></param>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="F:PIE.Plugin.FrmPCAInv.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmPCAInv.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmPCAInv.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.TransformFuncCommand_PCAInv">
+            <summary>
+            主成分正变换Command
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.TransformFuncCommand_PCAInv.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.TransformFuncCommand_PCAInv.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.TransformFuncCommand_PCAInv.OnAlgoExecuteCompleted(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法执行完成事件
+            </summary>
+            <param name="algo">算法</param>
+        </member>
+        <member name="M:PIE.Plugin.TransformFuncCommand_PCAInv.OnAlgoProgressChanged(System.Double,System.String,PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法进度变化事件
+            </summary>
+            <param name="complete">进度</param>
+            <param name="msg">进度信息</param>
+            <param name="algo">算法</param>
+            <returns>int</returns>
+        </member>
+        <member name="P:PIE.Plugin.FrmPCABandSelect.nOutBandCount">
+            <summary>
+            选择的输出波段数
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmPCABandSelect.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmPCABandSelect.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmPCABandSelect.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.FrmPCA">
+            <summary>
+            主成分正变换
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.FrmPCA.ExChangeData">
+            <summary>
+            参数转换
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmPCA.#ctor">
+            <summary>
+            主成分正变换
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmPCA.GetFiles(System.String)">
+            <summary>
+            获取文件路径
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmPCA.provingText(DevExpress.XtraEditors.TextEdit,System.String)">
+            <summary>
+            判断textbox是否为空
+            </summary>
+            <param name="textBox"></param>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmPCA.checkBox_Eigenvalue_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+            根据特征值排序选择
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:PIE.Plugin.FrmPCA.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmPCA.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmPCA.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.TransformFuncCommand_PCA">
+            <summary>
+            主成分正变换Command
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.TransformFuncCommand_PCA.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.TransformFuncCommand_PCA.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.TransformFuncCommand_PCA.OnAlgoExecuteCompleted(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法执行完成事件
+            </summary>
+            <param name="algo">算法</param>
+        </member>
+        <member name="M:PIE.Plugin.TransformFuncCommand_PCA.OnAlgoProgressChanged(System.Double,System.String,PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法进度变化事件
+            </summary>
+            <param name="complete">进度</param>
+            <param name="msg">进度信息</param>
+            <param name="algo">算法</param>
+            <returns>int</returns>
+        </member>
+        <member name="T:PIE.Plugin.FrmIHS2RGB">
+            <summary>
+            彩色空间逆变换
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.FrmIHS2RGB.ExChangeData">
+            <summary>
+            参数转换
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmIHS2RGB.#ctor">
+            <summary>
+            彩色空间逆变换
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmIHS2RGB.GetFiles(System.String)">
+            <summary>
+            获取文件路径
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmIHS2RGB.provingText(DevExpress.XtraEditors.TextEdit,System.String)">
+            <summary>
+            判断textbox是否为空
+            </summary>
+            <param name="textBox"></param>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="F:PIE.Plugin.FrmIHS2RGB.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmIHS2RGB.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmIHS2RGB.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.TransformIHS2RGBCommand">
+            <summary>
+            彩色空间逆变换Command
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.TransformIHS2RGBCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.TransformIHS2RGBCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.TransformIHS2RGBCommand.OnAlgoExecuteCompleted(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法执行完成事件
+            </summary>
+            <param name="algo">算法</param>
+        </member>
+        <member name="M:PIE.Plugin.TransformIHS2RGBCommand.OnAlgoProgressChanged(System.Double,System.String,PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法进度变化事件
+            </summary>
+            <param name="complete">进度</param>
+            <param name="msg">进度信息</param>
+            <param name="algo">算法</param>
+            <returns>int</returns>
+        </member>
+        <member name="T:PIE.Plugin.FrmRGB2IHS">
+            <summary>
+            彩色空间正变换
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.FrmRGB2IHS.ExChangeData">
+            <summary>
+            参数转换
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmRGB2IHS.#ctor">
+            <summary>
+            彩色空间正变换
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmRGB2IHS.GetFiles(System.String)">
+            <summary>
+            获取文件路径
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmRGB2IHS.provingText(DevExpress.XtraEditors.TextEdit,System.String)">
+            <summary>
+            判断textbox是否为空
+            </summary>
+            <param name="textBox"></param>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="F:PIE.Plugin.FrmRGB2IHS.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmRGB2IHS.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmRGB2IHS.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.TransformRGB2IHSCommand">
+            <summary>
+            彩色空间正变换Command
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.TransformRGB2IHSCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.TransformRGB2IHSCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.TransformRGB2IHSCommand.OnAlgoExecuteCompleted(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法执行完成事件
+            </summary>
+            <param name="algo">算法</param>
+        </member>
+        <member name="M:PIE.Plugin.TransformRGB2IHSCommand.OnAlgoProgressChanged(System.Double,System.String,PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法进度变化事件
+            </summary>
+            <param name="complete">进度</param>
+            <param name="msg">进度信息</param>
+            <param name="algo">算法</param>
+            <returns>int</returns>
+        </member>
+        <member name="T:PIE.Plugin.FrmWAVELETInv">
+            <summary>
+            小波逆变换
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.FrmWAVELETInv.ExChangeData">
+            <summary>
+            参数转换
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmWAVELETInv.#ctor">
+            <summary>
+            小波逆变换
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmWAVELETInv.GetFiles(System.String)">
+            <summary>
+            获取文件路径
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmWAVELETInv.provingText(DevExpress.XtraEditors.TextEdit,System.String)">
+            <summary>
+            判断textbox是否为空
+            </summary>
+            <param name="textBox"></param>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="F:PIE.Plugin.FrmWAVELETInv.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmWAVELETInv.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmWAVELETInv.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.TransformFuncCommand_WAVELETInv">
+            <summary>
+            小波逆变换Command
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.TransformFuncCommand_WAVELETInv.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.TransformFuncCommand_WAVELETInv.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.TransformFuncCommand_WAVELETInv.OnAlgoExecuteCompleted(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法执行完成事件
+            </summary>
+            <param name="algo">算法</param>
+        </member>
+        <member name="M:PIE.Plugin.TransformFuncCommand_WAVELETInv.OnAlgoProgressChanged(System.Double,System.String,PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法进度变化事件
+            </summary>
+            <param name="complete">进度</param>
+            <param name="msg">进度信息</param>
+            <param name="algo">算法</param>
+            <returns>int</returns>
+        </member>
+        <member name="T:PIE.Plugin.FrmWAVELET">
+            <summary>
+            小波正变换
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.FrmWAVELET.ExChangeData">
+            <summary>
+            参数转换
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmWAVELET.#ctor">
+            <summary>
+            小波正变换
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmWAVELET.GetFiles(System.String)">
+            <summary>
+            获取文件路径
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmWAVELET.provingText(DevExpress.XtraEditors.TextEdit,System.String)">
+            <summary>
+            判断textbox是否为空
+            </summary>
+            <param name="textBox"></param>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="F:PIE.Plugin.FrmWAVELET.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmWAVELET.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmWAVELET.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.TransformFuncCommand_WAVELET">
+            <summary>
+            小波正变换Command
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.TransformFuncCommand_WAVELET.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.TransformFuncCommand_WAVELET.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.TransformFuncCommand_WAVELET.OnAlgoExecuteCompleted(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法执行完成事件
+            </summary>
+            <param name="algo">算法</param>
+        </member>
+        <member name="M:PIE.Plugin.TransformFuncCommand_WAVELET.OnAlgoProgressChanged(System.Double,System.String,PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法进度变化事件
+            </summary>
+            <param name="complete">进度</param>
+            <param name="msg">进度信息</param>
+            <param name="algo">算法</param>
+            <returns>int</returns>
+        </member>
+    </members>
+</doc>

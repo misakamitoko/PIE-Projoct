@@ -1,0 +1,468 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PIE.Plugin.L2ProjectionPlugin</name>
+    </assembly>
+    <members>
+        <member name="M:L2ProjectionPlugin.Helper.Block.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:L2ProjectionPlugin.Helper.Block.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            重载构造函数
+            </summary>
+            <param name="xOffset">偏移量</param>
+            <param name="xEnd">x结束坐标</param>
+            <param name="yBegin">y坐标开始位置</param>
+            <param name="yEnd">y坐标结束位置</param>
+        </member>
+        <member name="P:L2ProjectionPlugin.Helper.Block.Width">
+            <summary>
+            块宽度（经度差）
+            </summary>
+        </member>
+        <member name="P:L2ProjectionPlugin.Helper.Block.Height">
+            <summary>
+            块宽度（纬度差）
+            </summary>
+        </member>
+        <member name="P:L2ProjectionPlugin.Helper.Block.Empty">
+            <summary>
+            设置块为空
+            </summary>
+        </member>
+        <member name="T:L2ProjectionPlugin.Helper.MemoryHelper">
+            <summary>
+            内存管理器
+            </summary>
+        </member>
+        <member name="M:L2ProjectionPlugin.Helper.MemoryHelper.GetAvalidPhyMemory">
+            <summary>
+            可用物理内存
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:L2ProjectionPlugin.Helper.MemoryHelper.GetMaxArrayLength``1(System.Int32)">
+            <summary>
+            当前可以申请的最大byte数组的大小
+            </summary>
+            <param name="arrayCount">byte数组个数</param>
+            <returns></returns>
+        </member>
+        <member name="M:L2ProjectionPlugin.Helper.PrjEnvelope.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:L2ProjectionPlugin.Helper.PrjEnvelope.GetEnvelope(System.Double[],System.Double[],L2ProjectionPlugin.Helper.PrjEnvelope)">
+             <summary>
+            得到范围（四角点坐标）
+             </summary>
+             <param name="srcXs"></param>
+             <param name="srcYs"></param>
+             <param name="validEnvelope"></param>
+             <returns></returns>
+        </member>
+        <member name="M:L2ProjectionPlugin.Helper.PrjEnvelope.GetSize(System.Double,System.Double)">
+            <summary>
+            四舍五入获得像素 高和宽
+            </summary>
+        </member>
+        <member name="M:L2ProjectionPlugin.Helper.PrjEnvelope.Contains(System.Double,System.Double)">
+            <summary>
+            是否包含
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+            <returns></returns>
+        </member>
+        <member name="T:L2ProjectionPlugin.Helper.OnProgressEventHandler">
+            <summary>
+            声明事件的委托类型
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="E:L2ProjectionPlugin.Helper.PolarDataHelper.OnProgress">
+            <summary>
+            声明事件本身 基于上面的委托定义事件
+            </summary>
+        </member>
+        <member name="F:L2ProjectionPlugin.Helper.PolarDataHelper.InvalidValue">
+            <summary>
+            值
+            </summary>
+        </member>
+        <member name="F:L2ProjectionPlugin.Helper.PolarDataHelper.m_ProgressbarValue">
+            <summary>
+            进度值
+            </summary>
+        </member>
+        <member name="F:L2ProjectionPlugin.Helper.PolarDataHelper.m_OutXResolution">
+            <summary>
+            x输出分辨率
+            </summary>
+        </member>
+        <member name="F:L2ProjectionPlugin.Helper.PolarDataHelper.m_OutYResolution">
+            <summary>
+             y输出分辨率
+            </summary>
+        </member>
+        <member name="F:L2ProjectionPlugin.Helper.PolarDataHelper.m_SrcImgResolution">
+            <summary>
+            原始图像分辨率
+            </summary>
+        </member>
+        <member name="F:L2ProjectionPlugin.Helper.PolarDataHelper.m_Left">
+            <summary>
+            读取轨道数据时候左右去除像元个数
+            </summary>
+        </member>
+        <member name="F:L2ProjectionPlugin.Helper.PolarDataHelper.m_Right">
+            <summary>
+            读取轨道数据时候左右去除像元个数
+            </summary>
+        </member>
+        <member name="F:L2ProjectionPlugin.Helper.PolarDataHelper.m_SacnLineWidth">
+            <summary>
+            扫描线宽度,默认为10，MERSI和MODIS的经纬度数据的扫描线。
+            </summary>
+        </member>
+        <member name="F:L2ProjectionPlugin.Helper.PolarDataHelper.m_DestSpatialReference">
+            <summary>
+            目标空间参考
+            </summary>
+        </member>
+        <member name="F:L2ProjectionPlugin.Helper.PolarDataHelper.m_Xs">
+            <summary>
+            经纬度值或者公里数，存储的实际是计算后的值
+            </summary>
+        </member>
+        <member name="F:L2ProjectionPlugin.Helper.PolarDataHelper.m_Ys">
+            <summary>
+            经纬度值或者公里数，存储的实际是计算后的值
+            </summary>
+        </member>
+        <member name="F:L2ProjectionPlugin.Helper.PolarDataHelper.m_SrcLocationSize">
+            <summary>
+            原图像大小
+            </summary>
+        </member>
+        <member name="F:L2ProjectionPlugin.Helper.PolarDataHelper.m_OrbitBlock">
+            <summary>
+            当前投影范围，需要使用的原始轨道数据最小范围
+            </summary>
+        </member>
+        <member name="F:L2ProjectionPlugin.Helper.PolarDataHelper.m_MaxPrjEnvelope">
+            <summary>
+            最大范围
+            </summary>
+        </member>
+        <member name="F:L2ProjectionPlugin.Helper.PolarDataHelper.m_DstEnvelope">
+            <summary>
+            目标范围
+            </summary>
+        </member>
+        <member name="F:L2ProjectionPlugin.Helper.PolarDataHelper.m_OutSize">
+            <summary>
+            输出图像大小
+            </summary>
+        </member>
+        <member name="F:L2ProjectionPlugin.Helper.PolarDataHelper.m_RasterBandsList">
+            <summary>
+            用于投影的通道数据集 ,其数组顺序即为输出目标文件的通道顺序
+            </summary>
+        </member>
+        <member name="F:L2ProjectionPlugin.Helper.PolarDataHelper.m_DstBandsCount">
+            <summary>
+            波段数量
+            </summary>
+        </member>
+        <member name="M:L2ProjectionPlugin.Helper.PolarDataHelper.Excute(PIE.DataSource.IMultiDataset,PIE.DataSource.IMultiDataset,System.String,System.Single,System.Single,System.String,System.String,PIE.Geometry.ISpatialReference,System.String)">
+            <summary>
+            执行投影
+            </summary>
+            <param name="srcMultiDataset">源多数据集</param>
+            <param name="locationMultiDataset">同轨数据集或经纬度信息数据集</param>
+            <param name="savePath">输出保存路径</param>
+            <param name="outXResolution">X分辨率</param>
+            <param name="outYResolution">Y分辨率</param>
+            <param name="lonName">经度名称</param>
+            <param name="latName">纬度名称</param>
+            <param name="spatialReference">空间参考</param>
+        </member>
+        <member name="M:L2ProjectionPlugin.Helper.PolarDataHelper.InitialParam(PIE.DataSource.IMultiDataset,PIE.DataSource.IMultiDataset,System.String,System.String,System.String)">
+            <summary>
+            初始化条件参数
+            </summary>
+            <param name="srcMultiDataset">源多数据集</param>
+            <param name="locationMultiDataset">同轨数据集或经纬度信息数据集</param>
+            <param name="lonName">经度名称</param>
+            <param name="latName">纬度名称</param>
+            <param name="spatialReference">空间参考</param>
+            <param name="bandName">数据集名称</param>
+        </member>
+        <member name="M:L2ProjectionPlugin.Helper.PolarDataHelper.ReadLocations(PIE.DataSource.IMultiDataset,System.String,System.String)">
+            <summary>
+            读取经纬度至数组
+            </summary>
+            <param name="locationMultiDataset"></param>
+            <param name="lonName"></param>
+            <param name="latName"></param>
+        </member>
+        <member name="M:L2ProjectionPlugin.Helper.PolarDataHelper.ReadBand(PIE.DataSource.IMultiDataset,System.String)">
+            <summary>
+            读取经纬度信息到数组
+            </summary>
+            <param name="locationMultiDataset"></param>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:L2ProjectionPlugin.Helper.PolarDataHelper.ComputeDstEnvelope(System.Double[],System.Double[],System.Drawing.Size,PIE.Geometry.ISpatialReference,L2ProjectionPlugin.Helper.PrjEnvelope)">
+            <summary>
+            计算输出范围
+            </summary>
+            <param name="srcXs"></param>
+            <param name="srcYs"></param>
+            <param name="srcLocationSize"></param>
+            <param name="destSpatialReference"></param>
+            <param name="maskEnvelop"></param>
+        </member>
+        <member name="M:L2ProjectionPlugin.Helper.PolarDataHelper.ReadRasterDataBands(PIE.DataSource.IRasterDataset)">
+            <summary>
+            获取波段数据
+            </summary>
+            <param name="rasterDataset">指定某一名称数据集</param>
+            <returns>波段数据列表</returns>
+        </member>
+        <member name="M:L2ProjectionPlugin.Helper.PolarDataHelper.CreateRasterDataset(System.String,System.Drawing.Size,PIE.DataSource.PixelDataType,System.Int32,PIE.Geometry.ISpatialReference)">
+            <summary>
+            创建栅格数据集
+            </summary>
+            <param name="savePath">保存路径</param>
+            <param name="outSize"></param>
+            <param name="dataType">数据集类型</param>
+            <param name="m_bandsCount">波段数量</param>
+            <param name="m_destSpatialReference">目标空间参考</param>
+            <returns>栅格数据集</returns>
+        </member>
+        <member name="M:L2ProjectionPlugin.Helper.PolarDataHelper.ProjectRaster(PIE.DataSource.IRasterDataset,PIE.DataSource.IRasterDataset,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="srcRasteDataset"></param>
+            <param name="destRasterDataset"></param>
+            <param name="beginBandIndex"></param>
+        </member>
+        <member name="M:L2ProjectionPlugin.Helper.PolarDataHelper.ProjectRaster``1(PIE.DataSource.IRasterDataset,PIE.DataSource.IRasterDataset,System.Int32)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="srcRasteDataset"></param>
+            <param name="destRasterDataset"></param>
+            <param name="beginBandIndex"></param>
+        </member>
+        <member name="M:L2ProjectionPlugin.Helper.PolarDataHelper.ProjectRaster``1(PIE.DataSource.IRasterDataset,PIE.DataSource.IRasterDataset,System.Int32,``0)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T">泛型</typeparam>
+            <param name="srcImgRaster">原始数据集</param>
+            <param name="destRasterDataset">目标栅格数据集</param>
+            <param name="beginBandIndex"></param>
+            <param name="invalidValue">有效值</param>
+        </member>
+        <member name="M:L2ProjectionPlugin.Helper.PolarDataHelper.GetBlockNumber(System.Drawing.Size,System.Drawing.Size,System.Single,System.Single,System.Int32@,System.Int32@,System.Int32@,System.Int32@)">
+            <summary>
+            获取分块的数量
+            </summary>
+            <param name="outSize"></param>
+            <param name="srcLocationSize"></param>
+            <param name="outXScale"></param>
+            <param name="outYScale"></param>
+            <param name="blockXNum"></param>
+            <param name="blockYNum"></param>
+            <param name="blockWidth"></param>
+            <param name="blockHeight"></param>
+        </member>
+        <member name="M:L2ProjectionPlugin.Helper.PolarDataHelper.GetBlockDatas(System.Double[],System.Double[],System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Double[]@,System.Double[]@)">
+            <summary>
+            得到每一块中的数据
+            </summary>
+            <param name="xs"></param>
+            <param name="ys"></param>
+            <param name="w"></param>
+            <param name="h"></param>
+            <param name="offBeginx"></param>
+            <param name="offBeginy"></param>
+            <param name="blockW"></param>
+            <param name="blockH"></param>
+            <param name="blockXs"></param>
+            <param name="blockYs"></param>
+        </member>
+        <member name="M:L2ProjectionPlugin.Helper.PolarDataHelper.ComputeIndexMapTable(System.Double[],System.Double[],System.Drawing.Size,System.Drawing.Size,L2ProjectionPlugin.Helper.PrjEnvelope,L2ProjectionPlugin.Helper.PrjEnvelope,System.UInt16[]@,System.UInt16[]@)">
+            <summary>
+            这里的srcToDstSpatialXs，srcToDstSpatialYs是目标参考投影(dstSpatialRef)下的值
+            </summary>
+        </member>
+        <member name="M:L2ProjectionPlugin.Helper.PolarDataHelper.ReadImgBand``1(``0[]@,PIE.DataSource.PixelDataType,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            读取波段信息
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="bandData"></param>
+            <param name="dataType"></param>
+            <param name="dstBandIndex"></param>
+            <param name="xOffset"></param>
+            <param name="yOffset"></param>
+            <param name="blockWidth"></param>
+            <param name="blockHeight"></param>
+        </member>
+        <member name="M:L2ProjectionPlugin.Helper.PolarDataHelper.RealProject``1(``0[],System.Drawing.Size,System.UInt16[],System.UInt16[],System.Drawing.Size,``0[],``0,System.Action{System.Int32,System.String})">
+            <summary>
+            数据投影 将原始数据的索引数据写入目标指定数据索引表里
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="srcRaster"></param>
+            <param name="srcSize"></param>
+            <param name="rowMapTable"></param>
+            <param name="colMapTable"></param>
+            <param name="mapSize"></param>
+            <param name="dstRaster"></param>
+            <param name="destFillValue"></param>
+            <param name="progressCallback"></param>
+        </member>
+        <member name="M:L2ProjectionPlugin.Helper.PolarDataHelper.ChazhiNear(System.Byte[],System.Int32,System.Int32,System.UInt16[],System.UInt16[])">
+            <summary>
+            最邻近插值法
+            </summary>
+            <param name="lootUpTableMask"></param>
+            <param name="lutWidth"></param>
+            <param name="lutHeight"></param>
+            <param name="tmpRowLookUpTable"></param>
+            <param name="tmpColLookUpTable"></param>
+        </member>
+        <member name="F:L2ProjectionPlugin.ProjectionDialog.m_savePath">
+            <summary>
+            保存路径
+            </summary>
+        </member>
+        <member name="F:L2ProjectionPlugin.ProjectionDialog.m_srcMultiDataset">
+            <summary>
+            原数据集
+            </summary>
+        </member>
+        <member name="F:L2ProjectionPlugin.ProjectionDialog.m_locationMultiDataset">
+            <summary>
+            同轨数据集或经纬度数据集
+            </summary>
+        </member>
+        <member name="F:L2ProjectionPlugin.ProjectionDialog.m_selectNodeCount">
+            <summary>
+            选择目录树节点的数量
+            </summary>
+        </member>
+        <member name="F:L2ProjectionPlugin.ProjectionDialog.m_selectedDatsetName">
+            <summary>
+            选择波段节点的名字
+            </summary>
+        </member>
+        <member name="F:L2ProjectionPlugin.ProjectionDialog.m_outXResolution">
+            <summary>
+            X输出分辨率
+            </summary>
+        </member>
+        <member name="F:L2ProjectionPlugin.ProjectionDialog.m_outYResolution">
+            <summary>
+            Y输出分辨率
+            </summary>
+        </member>
+        <member name="M:L2ProjectionPlugin.ProjectionDialog.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:L2ProjectionPlugin.ProjectionDialog.btn_Projection_Click(System.Object,System.EventArgs)">
+            <summary>
+            开始投影 
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:L2ProjectionPlugin.ProjectionDialog.polarDataHelper_OnProgress(System.Single)">
+            <summary>
+            执行委托事件
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:L2ProjectionPlugin.ProjectionDialog.Execute">
+            <summary>
+            功能执行入口
+            </summary>
+        </member>
+        <member name="M:L2ProjectionPlugin.ProjectionDialog.btn_GetInputPath_Click(System.Object,System.EventArgs)">
+            <summary>
+            获取输入文件路径
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:L2ProjectionPlugin.ProjectionDialog.btn_Cancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            窗体关闭
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:L2ProjectionPlugin.ProjectionDialog.btn_GetLocationPath_Click(System.Object,System.EventArgs)">
+             <summary>
+            打开同轨数据集或者经纬度数据集文件 
+             </summary>
+             <param name="sender"></param>
+             <param name="e"></param>
+        </member>
+        <member name="M:L2ProjectionPlugin.ProjectionDialog.treeView1_AfterCheck(System.Object,System.Windows.Forms.TreeViewEventArgs)">
+            <summary>
+            勾选节点显示详细信息（展示在右侧的listbox里面）
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:L2ProjectionPlugin.ProjectionDialog.btn_GetSavePath_Click(System.Object,System.EventArgs)">
+            <summary>
+            设置tiff输出路径
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:L2ProjectionPlugin.ProjectionDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:L2ProjectionPlugin.ProjectionDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:L2ProjectionPlugin.ProjectionDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.L2ProjectionCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.L2ProjectionCommand.OnClick">
+            <summary>
+            重写点击事件
+            </summary>
+        </member>
+    </members>
+</doc>
